@@ -5,7 +5,6 @@ const Header = () => {
         <div className="sticky top-0 left-0">
             <div className="flex items-center justify-between py-4">
                 <h1 className="text-4xl font-bold">Knowledge Cafe</h1>
-
                 <img
                     src={profile}
                     alt="profile_img"
