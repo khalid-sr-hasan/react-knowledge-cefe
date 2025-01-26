@@ -1,8 +1,20 @@
-# React + Vite
+# React Knowledge Cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **React Knowledge Cafe** repository! This project is designed to showcase a simple and responsive React application that displays a knowledge-sharing platform.
 
-Currently, two official plugins are available:
+## Website Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live Demo](https://react-knowledge-cafe.surge.sh)
+
+## Features
+
+- **Responsive Navbar**: A visually appealing navbar that stays fixed at the top.
+- **Dynamic Content**: Displays user-specific content using props.
+- **Reusable Components**: Organized and modular React components.
+- **Modern Styling**: Tailwind CSS for responsive and clean UI.
+
+## Tech Stack
+
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **Deployment**: Surge.sh
