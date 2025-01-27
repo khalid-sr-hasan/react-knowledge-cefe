@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 const BookMark = ({ readTime, bookMark }) => {
-    console.log(readTime);
     return (
         <div className="md:w-1/3">
             <div className="sticky top-24">
@@ -16,12 +15,13 @@ const BookMark = ({ readTime, bookMark }) => {
                         Bookmarked Blogs : {bookMark.length}
                     </h3>
 
-                    <div className="bg-white mt-5 p-5 rounded-md">
-                        <p className="font-bold md:text-lg">
-                            Master Microsoft Power Platform and Become an
-                            In-Demand!
-                        </p>
-                    </div>
+                    {bookMark.map((bookM, idx) => (
+                        <div key={idx} className="bg-white mt-5 p-5 rounded-md">
+                            <p className="font-bold md:text-lg">
+                                {bookM.title}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

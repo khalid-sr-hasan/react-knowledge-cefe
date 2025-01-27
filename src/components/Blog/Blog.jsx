@@ -59,7 +59,7 @@ const Blog = ({ blog, handleReadTime, handleAddBookMark }) => {
                     ))}
                 </div>
                 <button
-                    onClick={() => handleReadTime(reading_time)}
+                    onClick={() => handleReadTime(reading_time, id)}
                     className="my-3 font-semibold underline text-[#6047EC] hover:text-[#6e65a1] cursor-pointer"
                 >
                     Mark as read

@@ -9,13 +9,24 @@ function App() {
     const [readTime, setReadTime] = useState(0);
 
     const handleAddBookMark = (item) => {
-        const newItem = [...bookMark, item];
-        setBookMark(newItem);
+        const existBookMark = bookMark.find((bookM) => bookM.id === item.id);
+
+        if (existBookMark) {
+            return alert("book already added");
+        }
+
+        const newBookMark = [...bookMark, item];
+        setBookMark(newBookMark);
     };
 
-    const handleReadTime = (readingTime) => {
+    const handleReadTime = (readingTime, id) => {
         const totalTime = readTime + readingTime;
         setReadTime(totalTime);
+
+        const bExist = bookMark.filter((book) => book.id !== id);
+        setBookMark(bExist);
+
+        console.log(id);
     };
 
     return (
